@@ -178,7 +178,7 @@ export default class Pokemon extends Component {
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                             >
-                                                <small>{this.state.stats.hp}</small>
+                                                <small>{this.state.stats.hp}/100</small>
                                             </div>
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@ export default class Pokemon extends Component {
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                             >
-                                                <small>{this.state.stats.atk}</small>
+                                                <small>{this.state.stats.atk}/100</small>
                                             </div>
                                         </div>
                                     </div>
@@ -222,7 +222,7 @@ export default class Pokemon extends Component {
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                             >
-                                                <small>{this.state.stats.def}</small>
+                                                <small>{this.state.stats.def}/100</small>
                                             </div>
                                         </div>
                                     </div>
@@ -244,7 +244,7 @@ export default class Pokemon extends Component {
                                             aria-valuemin="0"
                                             aria-valuemax="100"
                                         >
-                                            <small>{this.state.stats.spd}</small>
+                                            <small>{this.state.stats.spd}/100</small>
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +266,7 @@ export default class Pokemon extends Component {
                                             aria-valuemin="0"
                                             aria-valuemax="240"
                                         >
-                                            <small>{this.state.exp}</small>
+                                            <small>{this.state.exp}/300</small>
                                         </div>
                                     </div>
                                 </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
 
 const TYPE_COLORS = {
     steel: 'B5B5C3',
@@ -21,6 +22,14 @@ const TYPE_COLORS = {
     rock: 'B9A156',
     water: '3295F6'
   };
+
+  const StyledCard = styled.div`
+    border-radius: 20px;
+`;
+
+    const InvDiv = styled.div`
+        background-color: transparent!important;
+    `;
 
 export default class Pokemon extends Component {
 
@@ -89,80 +98,42 @@ export default class Pokemon extends Component {
 
     render() {
         return (
-            
-            // <div className="row">
-            //     <div className="card">
-            //         <div className="card-body">
-            //             <div className="col align-items-center">
-            //                 <div>
-            //                     <img src={this.state.imgUrl} className="card-img-top rounded mt-2 mx-auto" alt=""/>
-            //                 </div>
-            //                 <div className="align-center">
-            //                     <h4 className="text-capitalize mx-auto" style={{textAlign: "center"}}>
-            //                         {this.state.name}
-            //                     </h4>
-            //                 </div>
-            //                 <div className="col justify-content-center">
-            //                     {this.state.types.map(type => (
-            //                         <span 
-            //                             key={type} 
-            //                             className="badge badge-light badge-pill text-capitalize mr-1"
-            //                             style={{
-            //                                 color: `#${TYPE_COLORS[type]}`
-            //                             }}
-            //                         > 
-            //                             {type}
-            //                         </span>
-            //                     ))}
-            //                 </div>
-            //             </div>
-            //         </div>
-            //     </div>
-            // </div>
-
-            <div className="col">
-                <div className="card">
-                    <div className="card-header">
-                        <div className="row">
-                            <div className="col-5">
-                                <h5>{this.state.pokemonIndex}</h5>
-                            </div>
-                            <div className="col-7">
-                                <div className="float-right">
-                                    {this.state.types.map(type => (
+            <div className="align-items-center">
+                <div className="card bg-transparent border-0">
+                    <div className="card-body">
+                        <div className="row align-items-center">
+                            <StyledCard className="card col-md-3 mb-4">
+                                <img
+                                src={this.state.imgUrl}
+                                className="card-img-top rounded mx-auto mt-2"
+                                />
+                                <h4 className="mx-auto text-capitalize mb-3">
+                                    {this.state.name}
+                                </h4>
+                                {this.state.types.map(type => (
+                                    <div className="align-self-center mb-2">
                                         <span
                                         key={type}
                                         className="badge badge-pill mr-1 text-capitalize"
                                         style={{
                                             backgroundColor: `#${TYPE_COLORS[type]}`,
-                                            color: 'white'
+                                            color: 'white',
+                                            width: '8rem'
                                         }}
                                         >
                                         {type}
                                         </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <div className="row align-items-center">
-                            <div className=" col-md-3 ">
-                                <img
-                                src={this.state.imgUrl}
-                                className="card-img-top rounded mx-auto mt-2"
-                                />
-                            </div>
-                            <div className="col-md-9">
-                                <h4 className="mx-auto">
-                                    {this.state.name
-                                        .toLowerCase()
-                                        .split(' ')
-                                        .map(s => s.charAt(0).toUpperCase() + s.substring(1))
-                                        .join(' ')}
+                                    </div>
+                                ))}
+                                <div className="mb-3"></div>
+                            </StyledCard>
+                            <div className="col-md-1"></div>
+                            <div className="col-md-8 mb-4">
+                                <h4 className="text-center text-white">
+                                    Base Stats
                                 </h4>
                                 <div className="row align-items-center">
-                                    <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                                    <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         HP
                                     </div>
                                     <div className={`col-12 col-md-${this.state.statBarWidth}`}>
@@ -184,7 +155,7 @@ export default class Pokemon extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                                    <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         ATK
                                     </div>
                                     <div className={`col-12 col-md-${this.state.statBarWidth}`}>
@@ -206,7 +177,7 @@ export default class Pokemon extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                                    <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         DEF
                                     </div>
                                     <div className={`col-12 col-md-${this.state.statBarWidth}`}>
@@ -228,7 +199,7 @@ export default class Pokemon extends Component {
                                     </div>
                                 </div>
                                 <div className="row align-items-center">
-                                    <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                                    <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         SPD
                                     </div>
                                 <div className={`col-12 col-md-${this.state.statBarWidth}`}>
@@ -250,7 +221,7 @@ export default class Pokemon extends Component {
                                 </div>
                             </div>
                                 <div className="row align-items-center">
-                                    <div className={`col-12 col-md-${this.state.statTitleWidth}`}>
+                                    <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         EXP
                                     </div>
                                 <div className={`col-12 col-md-${this.state.statBarWidth}`}>
@@ -259,12 +230,12 @@ export default class Pokemon extends Component {
                                             className="progress-bar bg-success"
                                             role="progressbar"
                                             style={{
-                                                width: `${this.state.exp}%`,
+                                                width: `${this.state.exp * 100 / 300}%`,
                                                 backgroundColor: `#${this.state.themeColor}`
                                             }}
                                             aria-valuenow={this.state.exp}
                                             aria-valuemin="0"
-                                            aria-valuemax="240"
+                                            aria-valuemax="300"
                                         >
                                             <small>{this.state.exp}/300</small>
                                         </div>

@@ -9,6 +9,11 @@
     transition: none !important;
 }
 
+.infinite-scroll-component {
+    overflow-y: auto;
+    overflow-x: hidden !important;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

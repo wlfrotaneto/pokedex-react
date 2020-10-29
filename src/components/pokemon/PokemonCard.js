@@ -3,27 +3,6 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import spinner from "../../img/spinner.gif";
 
-// const TYPE_COLORS = {
-//     steel: 'B5B5C3',
-//     dark: '4F3A2D',
-//     bug: 'B1C12E',
-//     dragon: '755EDF',
-//     electric: 'FCBC17',
-//     fairy: 'F4B1F4',
-//     fighting: '823551D',
-//     fire: 'E73B0C',
-//     flying: 'A3B3F7',
-//     ghost: '6060B2',
-//     grass: '74C236',
-//     ground: 'D3B357',
-//     ice: 'A3E7FD',
-//     normal: 'C8C4BC',
-//     poison: '934594',
-//     psychic: 'ED4882',
-//     rock: 'B9A156',
-//     water: '3295F6'
-//   };
-
 const Sprite = styled.img`
     width: 5em;
     height: 5em;
@@ -77,18 +56,10 @@ export default class PokemonCard extends Component {
 
 
     render() { 
-
-        // var randomColor = () => {
-        //     var keys = Object.keys(TYPE_COLORS);
-        //     return TYPE_COLORS[keys[ keys.length * Math.random() << 0]];
-        // };
-        // style={{backgroundColor: `#${randomColor}`}}
-
         return (
             <div className='center-box col-lg-2 col-md-4 col-sm-6 mb-5'>
                 <StyledLink to={`pokemon/${this.state.pokemonIndex}`}>
                     <Card className="card" >
-                        {/* <h5 className="card-header">{this.state.pokemonIndex}</h5> */}
                         {this.state.imgLoading ? (
                             <img 
                                 src={spinner}

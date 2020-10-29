@@ -129,10 +129,10 @@ export default class Pokemon extends Component {
                             </StyledCard>
                             <div className="col-md-1"></div>
                             <div className="col-md-8 mb-4">
-                                <h4 className="text-center text-white">
+                                <h4 className="text-center text-white mb-4">
                                     Base Stats
                                 </h4>
-                                <div className="row align-items-center">
+                                <div className="row align-items-center mb-2">
                                     <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         HP
                                     </div>
@@ -154,7 +154,7 @@ export default class Pokemon extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row align-items-center">
+                                <div className="row align-items-center mb-2">
                                     <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         ATK
                                     </div>
@@ -176,7 +176,7 @@ export default class Pokemon extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row align-items-center">
+                                <div className="row align-items-center mb-2">
                                     <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         DEF
                                     </div>
@@ -198,7 +198,7 @@ export default class Pokemon extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row align-items-center">
+                                <div className="row align-items-center mb-2">
                                     <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         SPD
                                     </div>
@@ -220,7 +220,7 @@ export default class Pokemon extends Component {
                                     </div>
                                 </div>
                             </div>
-                                <div className="row align-items-center">
+                                <div className="row align-items-center mb-2">
                                     <div className={`col-12 col-md-${this.state.statTitleWidth} text-white`}>
                                         EXP
                                     </div>

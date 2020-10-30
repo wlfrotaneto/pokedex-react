@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0cab8f2.chunk.css",
-    "main.js": "/static/js/main.d1b0b44c.chunk.js",
-    "main.js.map": "/static/js/main.d1b0b44c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.de62904a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.de62904a.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.d6097631.chunk.js": "/static/js/2.d6097631.chunk.js",
-    "static/js/2.d6097631.chunk.js.map": "/static/js/2.d6097631.chunk.js.map",
-    "static/js/3.278ff0ad.chunk.js": "/static/js/3.278ff0ad.chunk.js",
-    "static/js/3.278ff0ad.chunk.js.map": "/static/js/3.278ff0ad.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.b0cab8f2.chunk.css.map": "/static/css/main.b0cab8f2.chunk.css.map",
-    "static/js/2.d6097631.chunk.js.LICENSE.txt": "/static/js/2.d6097631.chunk.js.LICENSE.txt",
-    "static/media/spinner.f7ba4861.gif": "/static/media/spinner.f7ba4861.gif"
+    "main.css": "/pokedex-react/static/css/main.b0cab8f2.chunk.css",
+    "main.js": "/pokedex-react/static/js/main.d1b0b44c.chunk.js",
+    "main.js.map": "/pokedex-react/static/js/main.d1b0b44c.chunk.js.map",
+    "runtime-main.js": "/pokedex-react/static/js/runtime-main.7a71d73c.js",
+    "runtime-main.js.map": "/pokedex-react/static/js/runtime-main.7a71d73c.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/pokedex-react/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.0507a806.chunk.js": "/pokedex-react/static/js/2.0507a806.chunk.js",
+    "static/js/2.0507a806.chunk.js.map": "/pokedex-react/static/js/2.0507a806.chunk.js.map",
+    "static/js/3.278ff0ad.chunk.js": "/pokedex-react/static/js/3.278ff0ad.chunk.js",
+    "static/js/3.278ff0ad.chunk.js.map": "/pokedex-react/static/js/3.278ff0ad.chunk.js.map",
+    "index.html": "/pokedex-react/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/pokedex-react/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.b0cab8f2.chunk.css.map": "/pokedex-react/static/css/main.b0cab8f2.chunk.css.map",
+    "static/js/2.0507a806.chunk.js.LICENSE.txt": "/pokedex-react/static/js/2.0507a806.chunk.js.LICENSE.txt",
+    "static/media/spinner.f7ba4861.gif": "/pokedex-react/static/media/spinner.f7ba4861.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.de62904a.js",
+    "static/js/runtime-main.7a71d73c.js",
     "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.d6097631.chunk.js",
+    "static/js/2.0507a806.chunk.js",
     "static/css/main.b0cab8f2.chunk.css",
     "static/js/main.d1b0b44c.chunk.js"
   ]

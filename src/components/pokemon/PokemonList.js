@@ -30,7 +30,7 @@ export default class PokemonList extends Component {
         this.setState({pokemon: res.data['results']});
 
         this.setState({
-            dataLength: res.data.count,
+            dataLength: 90,
             nextUrl: res.data.next
         })
     }
@@ -46,7 +46,7 @@ export default class PokemonList extends Component {
                         const res = await axios.get(this.state.nextUrl);
                         this.setState({pokemon: this.state.pokemon.concat(res.data['results'])});
                         this.setState({
-                            dataLength: res.data.count,
+                            dataLength: this.state.dataLength + 90,
                             nextUrl: res.data.next
                         })
                     }}

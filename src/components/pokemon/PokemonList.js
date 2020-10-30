@@ -19,7 +19,7 @@ const Loading = styled.div`
 export default class PokemonList extends Component {
 
     state = {
-        url: `https://pokeapi.co/api/v2/pokemon/?limit=60`,
+        url: `https://pokeapi.co/api/v2/pokemon/?limit=90`,
         pokemon: null,
         dataLength: '',
         nextUrl: '',
